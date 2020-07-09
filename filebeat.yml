@@ -1,0 +1,8 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /var/log/tomcat8/localhost_access_log.*.txt
+
+output.logstash:
+  hosts: ["localhost:5044"]
